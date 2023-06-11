@@ -6,19 +6,16 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
-using System;
+Console.WriteLine("Введите первое число: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
 
- Console.WriteLine("Введите первое число: ");
-            int firstNumber = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Введите второе число: ");
-            int secondNumber = Convert.ToInt32(Console.ReadLine());
-
-            if (firstNumber > secondNumber)
-            {
-                Console.WriteLine("Первое число " + firstNumber + " больше чем второе " + secondNumber);
-            }
-            else
-            {
-                Console.WriteLine("Второе число " + secondNumber + " больше чем первое " + firstNumber);
-            }
+Console.WriteLine("Введите второе число: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
+    if (firstNumber > secondNumber)
+    {
+        Console.WriteLine("Первое число " + firstNumber + " больше чем второе " + secondNumber);
+    }
+    else
+    {
+        Console.WriteLine("Второе число " + secondNumber + " больше чем первое " + firstNumber);
+    }
