@@ -8,30 +8,17 @@ a = -9 b = -3 -> max = -3
 
 using System;
 
-namespace main
+ Console.WriteLine("Введите первое число: ");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
 
-{
+            Console.WriteLine("Введите второе число: ");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-   class Program
-
-   {
-
-       static void Main(string[] args)
-
-       {
-
-           Console.WriteLine("Введите первое число:");
-
-           int a = Convert.ToInt32(Console.ReadLine());
-
-           Console.WriteLine("Введите второе число:");
-
-           int b = Convert.ToInt32(Console.ReadLine());
-
-           Console.WriteLine(a > b ? "Первое число больше второго" : "Второе число больше первого");
-
-       }
-
-   }
-
-}
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine("Первое число " + firstNumber + " больше чем второе " + secondNumber);
+            }
+            else
+            {
+                Console.WriteLine("Второе число " + secondNumber + " больше чем первое " + firstNumber);
+            }
