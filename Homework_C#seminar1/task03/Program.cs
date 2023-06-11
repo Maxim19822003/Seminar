@@ -5,24 +5,12 @@
 8 -> 2, 4, 6, 8
 */
 
-int i = 1;
-            bool not = true;
+Console.WriteLine("Введите число N");
+int n = Convert.ToInt32(Console.ReadLine());
+for(int i=1;i<=n;i++)
+{
+if (i % 2 == 0)
+System.Console.Write(i + " ");
+}
 
-            Console.WriteLine("Введите число:");
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Чётные числа от 1 до " + num);
-            while (i <= num)
-            {
-                if (i % 2 != 1)
-                {
-                    Console.Write(i + ", ");
-                    not = false;
-                }
-                i++;
-            }
-
-            if (not)
-            {
-                Console.WriteLine("Нет чётных чисел!");
-            }
+            
