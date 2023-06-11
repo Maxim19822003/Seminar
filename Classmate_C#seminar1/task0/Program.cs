@@ -9,5 +9,5 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int squareNumber = number * number;
 
-Console.WriteLine(squareNumber);
+Console.WriteLine($"Square {number} is {squareNumber}");
 
