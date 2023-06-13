@@ -7,15 +7,12 @@
 */
 
 Console.WriteLine("Введите первое число: ");
-
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите второе число: ");
-
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите третье число: ");
-
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstNumber > secondNumber)
@@ -30,7 +27,9 @@ if (firstNumber > secondNumber)
     }
 }
 
-else if (secondNumber > thirdNumber)
+else if (secondNumber > thirdNumber)//Формат if/else if гарантирует, что
+// при выполнении какого-либо из условий блоки с другими условиями 
+//не будут выполнены. При использовании цепочки if это не гарантируется. 
 {
     Console.WriteLine("Максимальное число: " + secondNumber);
 }
