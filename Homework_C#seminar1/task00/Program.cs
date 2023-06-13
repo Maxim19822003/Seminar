@@ -8,6 +8,9 @@ a = -9 b = -3 -> max = -3
 
 Console.WriteLine("Введите первое число: ");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
+//вводите в консоли в данном месте число, но оно считывается как строка,
+// и ToInt32 преобразует это строковое число в обычный int32
+// (32 битное целое число) 
 
 Console.WriteLine("Введите второе число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
