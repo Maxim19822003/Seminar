@@ -5,10 +5,12 @@
 782 -> 8
 918 -> 1
 */
+/*
 Console.Write("Enter a three-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Second number is {number/10%10}");
+*/
 /*
 Random rand = new Random();
 int number = rand.Next(100, 1000);
@@ -27,6 +29,19 @@ Console.WriteLine($"Second number is {secondNum}");
 78 -> третьей цифры нет
 32679 -> 6
 
+
+/*
+Console.Write("Input a number ");
+int num = Convert.ToInt32(Console.ReadLine());
+string numStr = Convert.ToString(num);
+int numDigit = numStr.Length;
+    if (numDigit > 2) 
+        Console.WriteLine($"Third digit is {numStr[2]}");
+    else 
+        Console.WriteLine("There is no third digit");
+*/        
+
+/*
 Задача 15: Напишите программу, которая принимает на вход цифру, 
 обозначающую день недели, и проверяет, является ли этот день выходным.
 6 -> да
