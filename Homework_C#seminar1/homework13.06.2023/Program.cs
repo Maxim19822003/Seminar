@@ -9,7 +9,7 @@
 Console.Write("Enter a three-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Second number is {number/10%10}");
+Console.WriteLine($"Second digit is {number/10%10}");
 */
 /*
 Random rand = new Random();
@@ -19,7 +19,7 @@ int firstNum = number/10;
 int secondNum = firstNum%10;
 
 Console.WriteLine($"Our random number is {number}");
-Console.WriteLine($"Second number is {secondNum}");
+Console.WriteLine($"Second digit is {secondNum}");
 */
 
 /*
@@ -47,4 +47,21 @@ int numDigit = numStr.Length;
 6 -> да
 7 -> да
 1 -> нет
+*/
+
+/*
+Console.Write("Enter the number of the day of the week "); 
+int number = Convert.ToInt32(Console.ReadLine());
+switch (number)
+{
+    case 6:
+        Console.WriteLine("Yes");
+        break;
+    case 7:
+        Console.WriteLine("Yes");
+        break;
+    default:
+        Console.WriteLine("No");
+        break;
+}
 */
