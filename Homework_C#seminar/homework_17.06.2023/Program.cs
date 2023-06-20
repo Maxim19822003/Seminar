@@ -8,57 +8,26 @@
 12821 -> да
 23432 -> да
 */
-/*
-public static bool Palindrom(string s)
-{
-    for (int i = 0; i < s.Length / 2; i++)
- 
-        if (s[i] != s[s.Length - i - 1])
-            return false;
-    return true;
-}
-*/
 
-/*  
-public class PalindromeExample  
-{  
-    public static void Main(string[] args)  {  
-        int n, r, sum=0, temp;    
-        Console.Write("Enter the five digit number: ");   
-        n = int.Parse(Console.ReadLine());
-        //int i = 4; i = n.Length  
-        temp = n;      
-        while(n>0){      
-            r = n%10;      
-            sum = (sum*10) + r;      
-            n = n/10;      
-        }      
-        if(temp == sum)      
-            Console.Write("Number is Palindrome.");      
-        else      
-            Console.Write("Number is not Palindrome");     
-    }  
-}
-*/
 /*
-Console.WriteLine("Введите число: ");
+Console.WriteLine("Input five-digit number: ");
 string number = Console.ReadLine();
-int len = number.Length;
+int lenght = number.Length;
 
-if (len == 5)
+if (lenght == 5)
 {
     if (number[0] == number[4] && number[1] == number[3])
     {
-        Console.WriteLine($"{number} - Палиндром");
+        Console.WriteLine($"{number} -> yes");
     }
     else
     {
-        Console.WriteLine($"{number} - НЕ палиндром");
+        Console.WriteLine($"{number} -> no");
     }
 }
 else
 {
-    Console.WriteLine($"ОШИБКА: {number} - не является пятизначным");
+    Console.WriteLine($"Error: {number} - not five-digit number ");
 }
 */
 /*
