@@ -1,0 +1,15 @@
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.csproj.AssemblyReference.cache
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.AssemblyInfoInputs.cache
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.AssemblyInfo.cs
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.csproj.CoreCompileInputs.cache
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\bin\Debug\net7.0\homework_27.06.2023.exe
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\bin\Debug\net7.0\homework_27.06.2023.deps.json
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\bin\Debug\net7.0\homework_27.06.2023.runtimeconfig.json
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\bin\Debug\net7.0\homework_27.06.2023.dll
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\bin\Debug\net7.0\homework_27.06.2023.pdb
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.dll
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\refint\homework_27.06.2023.dll
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.pdb
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\homework_27.06.2023.genruntimeconfig.cache
+C:\Users\maxim\OneDrive\Рабочий стол\Семинары\Сишарп\Homework_C#seminar\homework_27.06.2023\obj\Debug\net7.0\ref\homework_27.06.2023.dll
