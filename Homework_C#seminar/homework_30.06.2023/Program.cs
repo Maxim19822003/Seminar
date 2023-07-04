@@ -29,13 +29,7 @@ double [,] CreatArray(int row, int col){
 void PrintArray(double[,] array){
     int row = array.GetLength(0);
     int col = array.GetLength(1);
-    ConsoleColor[] colArray = new ConsoleColor[]{
- ConsoleColor.Black,ConsoleColor.Blue,ConsoleColor.Cyan,
- ConsoleColor.DarkBlue,ConsoleColor.DarkCyan,ConsoleColor.DarkGray,
- ConsoleColor.DarkGreen,ConsoleColor.DarkMagenta,ConsoleColor.DarkRed,
- ConsoleColor.DarkYellow,ConsoleColor.Gray,ConsoleColor.Green,
- ConsoleColor.Magenta,ConsoleColor.Red,ConsoleColor.White,
- ConsoleColor.Yellow};
+  
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
@@ -74,7 +68,7 @@ int ReadData(string msg)
     return int.Parse(Console.ReadLine() ?? "0");
 }
 
-// Функция для создания массива сo случайными значениями
+// Функция для создания массива сo случайными значениями.
 int[,] CreateArray(int row, int col, int min, int max){
     Random rand = new Random();
     int[,] array = new int[row, col];
@@ -89,7 +83,7 @@ int[,] CreateArray(int row, int col, int min, int max){
     return array;
 }
 
-// Функция для поиска элемента в массиве
+// Функция для поиска элемента в массиве.
 bool FindElement(int[,] array, int x, int y, out int foundElem)
 {
     foundElem = 0;
@@ -115,12 +109,12 @@ else
     Console.WriteLine("Element not found. Please check the input.");
 }
 
-// Выводим массив
+// Выводим массив.
 for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        Console.Write(array[i, j] + "\t");
+        Console.Write($"{array[i, j]}\t");
     }
     Console.WriteLine();
 }
@@ -130,60 +124,49 @@ for (int i = 0; i < array.GetLength(0); i++)
 Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее 
 арифметическое элементов в каждом столбце.
 З.Ы. И по диагонали.
+З.З.Ы. И цветастости))
 Например, задан массив:
 1 4 7 2
 5 9 2 3
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 */
+/*
 Console.Clear();
-
-// Метод ввода данных с консоли
-int ReadData(string msg)
-{
-    Console.Write(msg);
-    return int.Parse(Console.ReadLine() ?? "0");
-}
-
-
-//Метод для заполнения 2D массива целыми (int) числами
-int[,] Gen2DArrayInt(int row, int column)
-{
-    int i = 0; int j = 0;
-    int[,] arr = new int[row, column];
-    while (i < row)
+//Создаём массив случайных целых чисел.
+int [,] CreatArray(int row, int col, int min, int max){
+    Random rand = new Random();
+    int [,] array = new int[row, col];
+    for (int i = 0; i < row; i++)
     {
-        j = 0;
-        while (j < column)
+        for (int j = 0; j < col; j++)
         {
-            arr[i, j] = new Random().Next(0, 101);
-            j++;
+            array[i,j] = rand.Next(min, max+1);
         }
-        i++;
     }
-    return arr;
+    return array;
 }
+//Выводим двумерный массив в консоль.
+void Print2Array(int[,] array){
+    int row = array.GetLength(0);
+    int col = array.GetLength(1);
 
-//Метод вывода 2D массива в консоль
-void Print2DArr(int[,] arr)
-{
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < row; i++)
     {
-        for (int j = 0; j < arr.GetLength(1); j++)
+        for (int j = 0; j < col; j++)
         {
             Console.ForegroundColor = (ConsoleColor)(new System.Random().Next(0,16));
-            Console.Write(arr[i, j]+"\t");
-            Console.ResetColor(); 
+            Console.Write($"{array[i,j]}\t");
+            Console.ResetColor();
         }
-        Console.WriteLine("");
+        Console.WriteLine();
     }
 }
-
-// Метод печати 1D массива в консоль
-void Print1DArr(int[] arr)
-{
+//Выводим одномерный массив в консоль.
+void Print1Array(double [] arr){
     Console.Write("[");
-    for (int i = 0; i < arr.Length - 1; i++)
+//Console.WriteLine($"[{string.Join(", ", arr)}]");
+    for (int i = 0; i < arr.Length; i++)
     {
         Console.ForegroundColor = (ConsoleColor)(new System.Random().Next(0,16));
         Console.Write(arr[i] + ", ");
@@ -192,57 +175,43 @@ void Print1DArr(int[] arr)
     Console.WriteLine(arr[arr.Length - 1] + "]");
 }
 
-
-// Метод подсчета среднего арифметического по столбцам
-int[] MeanColum(int[,] arr)
-{
-    int[] means = new int[arr.GetLength(1)];
+//Метод подсчёта среднего арифметического по столбцам.
+double [] MeanCol(int[,]arr){
+    double[] means = new double[arr.GetLength(1)];
     for (int i = 0; i < arr.GetLength(1); i++)
     {
         for (int j = 0; j < arr.GetLength(0); j++)
         {
-            means[i] = means[i] + arr[j, i];
+            means[i] = means[i] + arr[j,i];
         }
-        means[i] = means[i] / arr.GetLength(0);
+        means[i] = means[i]/arr.GetLength(0);
+        means[i] = Math.Round(means[i],2);
     }
     return means;
 }
-
-// Метод подсчета среднего арифметического по диагонали
-int DiagAverage(int[,] arr)
-{
-    int res = 0;
+//Вычисляем среднее арифметическое диагонали.
+double DiagAverage(int[,] arr){
+    double res = 0;
     int count = 0;
     int min = arr.GetLength(0) > arr.GetLength(1) ? arr.GetLength(1) : arr.GetLength(0);
 
     for (int i = 0; i < min; i = i + 1)
     {
         res = res + arr[i, i];
+        res = Math.Round(res,2);
         count = count + 1;
     }
     res = res / count;
     return res;
 }
 
-
-// 1. Получение данных от пользователя
-int row = ReadData("Количество строк матрицы: ");
-int column = ReadData("Количество столбцов матрицы: ");
-
-// 2. Генерируем 2D массив
-int[,] arr2D = Gen2DArrayInt(row, column);
-
-// 3. Считаем среднее арифметическое по столбцам
-int[] average = MeanColum(arr2D);
-
-// 4. Печатаем 2D Массив
-Print2DArr(arr2D);
-
+int [,] array = CreatArray(4, 4, 1, 10);
+Print2Array(array);
 Console.WriteLine();
-Console.WriteLine("Среднее арифметическое по столбцам: ");
-// 5. Печатаем 1D Массив
-Print1DArr(average);
-
-int diagAver = DiagAverage(arr2D);
-Console.WriteLine("Среднее арифметическое по диагонали: ");
+Console.WriteLine("Columns average: ");
+double[] average = MeanCol(array);
+Print1Array(average);
+var diagAver = DiagAverage(array);
+Console.WriteLine("Diagonal average: ");
 Console.WriteLine(diagAver);
+*/
