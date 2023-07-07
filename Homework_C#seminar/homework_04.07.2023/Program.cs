@@ -234,11 +234,7 @@ PrintArrays(array, array2, array3);
 26(1,0,1) 55(1,1,1)
 */
 /*
-int[,,] array = CreateUniqueArray(2, 2, 2);
-PrintArrayWithCoordinates(array);
-
-int[,,] CreateUniqueArray(int size1, int size2, int size3)
-{
+int[,,] CreateUniqueArray(int size1, int size2, int size3){
     int[,,] array = new int[size1, size2, size3];
     HashSet<int> usedNumbers = new HashSet<int>();
 
@@ -282,11 +278,14 @@ void PrintArrayWithCoordinates(int[,,] array)
             for (int k = 0; k < size3; k++)
             {
                 int number = array[i, j, k];
-                Console.WriteLine($"Number: {number}, Coordinates: ({i}, {j}, {k})");
+                Console.WriteLine($" {number}({i}, {j}, {k})");
             }
         }
     }
 }
+Console.Clear();
+int[,,] array = CreateUniqueArray(2, 2, 2);
+PrintArrayWithCoordinates(array);
 */
 /*
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
@@ -296,6 +295,7 @@ void PrintArrayWithCoordinates(int[,,] array)
 11 16 15 06
 10 09 08 07
 */
+/*
 void FillSpiralArray(int[,] array, int n)
 {
     int value = 1;
@@ -358,3 +358,4 @@ Console.Clear();
 int[,] array = new int[4, 4];
 FillSpiralArray(array, 4);
 PrintArray(array);
+*/
